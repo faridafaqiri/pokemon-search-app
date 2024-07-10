@@ -12,6 +12,7 @@ const defense = document.getElementById('defense');
 const specialAttack = document.getElementById('special-attack');
 const specialDefense = document.getElementById('special-defense');
 const speed = document.getElementById('speed');
+const errorMessage = document.getElementById('error-message');
 
 const searchPokedex = async () => {
   if (userInput.value === '') {
@@ -28,7 +29,7 @@ const searchPokedex = async () => {
       height,
       types,
       stats,
-      sprites
+      sprites,
     } = data;
 
     pokemonImage.innerHTML = `<img src='${sprites.front_default}' id='sprite'>`;
@@ -45,7 +46,7 @@ const searchPokedex = async () => {
     specialDefense.innerHTML = stats[4].base_stat;
     speed.innerHTML = stats[5].base_stat;
   } catch (err) {
-    alert('Pokemon not found');
+    errorMessage.textContent = 'Pokemon not found';
   }
 };
 
