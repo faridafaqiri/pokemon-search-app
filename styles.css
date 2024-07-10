@@ -89,7 +89,8 @@ label {
   width: 200px;
 }
 
-#weight, #height {
+#weight,
+#height {
   align-self: flex-start;
 }
 
@@ -110,7 +111,7 @@ table {
 }
 
 td, th {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -151,7 +152,7 @@ td, th {
 }
 
 .flying {
-  background-color: #8899ff;
+  background-color: #89f;
 }
 
 .psychic {
@@ -187,20 +188,19 @@ td, th {
 }
 
 @media screen and (max-width: 700px) {
-  
-#pokedex-container {
-  margin-left: 45px;
-  align-items: center;
-}
+  #pokedex-container {
+    margin-left: 45px;
+    align-items: center;
+  }
   #pokedex {
-  width: 90%;
-  margin-bottom: 5vh;
-}
+    width: 90%;
+    margin-bottom: 5vh;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 1100px) {
   #pokedex {
-  width: 50%;
-  margin-bottom: 5vh;
-}
+    width: 50%;
+    margin-bottom: 5vh;
+  }
 }
