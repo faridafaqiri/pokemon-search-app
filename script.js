@@ -21,7 +21,15 @@ const searchPokedex = async () => {
   try {
     const res = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${userInput.value.toLowerCase()}`);
     const data = await res.json();
-    const {name, id, weight, height, types, stats, sprites} = data;
+    const {
+      name,
+      id,
+      weight,
+      height,
+      types,
+      stats,
+      sprites
+    } = data;
 
     pokemonImage.innerHTML = `<img src='${sprites.front_default}' id='sprite'>`;
     pokemonName.innerHTML = name.toUpperCase();
