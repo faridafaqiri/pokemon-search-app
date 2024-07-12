@@ -7,6 +7,10 @@ Welcome to the Pokémon Search App! This app allows you to search for Pokémon b
 ![Project Demo](./images/Capture.JPG)
 ![Project Demo](./images/Capture2.JPG)
 
+## Live Link
+
+https://faridafaqiri.github.io/pokemon-search-app/
+
 ## Features ⭐
 
 Search Functionality: Search for Pokémon by name or ID.
